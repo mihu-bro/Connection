@@ -2,25 +2,43 @@
 
 > A private world for two.
 
-Beautiful. Animated. Intimate.
-
-A couple chat app rebuilt from the ground up — glassmorphism, buttery micro-interactions, and a calm, premium feel.
+Real-time privacy-first couple messaging app.
 
 ---
 
-### Vision
+### Features
 
-- Soft glass UI with depth and light
-- Smooth 60fps animations everywhere
-- Instant feel (smart local cache + offline-first)
-- Clean architecture, zero clutter
-- Dark romantic aesthetic by default
+- Encrypted chat (AES)
+- Voice notes & media
+- Live location sharing
+- Photo album + locked folder
+- Voice / video call (WebRTC)
+- Watch together
+- Shared calendar
+- App lock + stealth / decoy mode
+- Self-destruct messages
+- Offline queue + local cache
 
 ---
 
-### Status
+### Stack
 
-`v0` — Foundation in progress
+- Flutter
+- Firebase (Auth, Firestore, FCM)
+- Cloudinary
+- WebRTC
+
+---
+
+### Structure
+
+```
+lib/
+  screens/     → UI screens
+  services/    → business logic & Firebase
+  widgets/     → shared UI components
+  core/        → theme, locale, utils
+```
 
 ---
 
